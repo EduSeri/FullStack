@@ -1,0 +1,63 @@
+
+
+<a href="#" (click)="clickFunction()"></a>
+<div *ngIf="ocultar">
+  <h1 class="titulo">Weather {{grado}}</h1> <img src="{{nube}}">
+
+  <form action="resultado-list/resultado-list.component.html" class="mb-3 text-center">
+
+    <h3 class="mb-3 text-center"><i>Aeropuerto</i></h3>
+
+    <div class="mb-3 text-center">
+      <label> From: </label>
+      <select class="combo" [(ngModel)]="aSalida" aria-label="Default select example" name="salida">
+        <option *ngFor="let n of countries">{{n}}</option>
+      </select>
+    </div>
+
+    <div class="mb-3 text-center">
+      <label> To: </label>
+      <select class="combo" [(ngModel)]="aLlegada" aria-label="Default select example" name="llegada">
+        <option *ngFor="let n of countries">{{n}}</option>
+      </select>
+    </div>
+
+    <div class="mb-3 text-center">
+      <label>fecha salida:</label>
+      <input type="date" [(ngModel)]="fSalida" id="FSalida" name="FSalida">
+    </div>
+
+    <div>
+      <label>fecha regreso:</label>
+      <input type="date" id="FRegreso" name="FRegreso">
+    </div>
+
+    <div class="mb-3 text-center bajar">
+      <select class="combo" [(ngModel)]="monedaLlegada" aria-label="Default select example" name="monedaLlegada">
+        <option *ngFor="let n of monedaForm">{{n}}</option>
+      </select>
+    </div>
+
+    <div>
+
+      <button (click)="clickFunction()" id="boton" name="boton">Validar</button>
+    </div>
+
+
+  </form>
+</div>
+
+<div *ngIf="mostrar">
+  <app-resultado-list 
+  [codigoVuelo]="codigoVuelo" 
+  [tiempoVuelo]="tiempoVuelo" 
+  [horaSalida]="horaSalida" 
+  [horaLlegada]="horaLlegada"
+  [monedaDestino]="monedaDestino"
+  [monedaCambio]="monedaCambio">
+  </app-resultado-list>
+</div>
+<router-outlet></router-outlet>
+<!-- <router-outlet>
+routerLink="/resultado-list"
+</router-outlet> -->

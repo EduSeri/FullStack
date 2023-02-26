@@ -1,0 +1,69 @@
+.imagen{
+    padding-top: 5px;
+    padding-right: 4%;
+    padding-bottom: 50px;
+    padding-left: 2%;
+    border: 1px solid black;
+    margin-left: 80%;
+    margin-right: 80%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.hijo{
+    position: relative;
+position: absolute;
+top: 12px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    position: relative;
+    left:25%;
+
+
+
+    th{
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+        left: 25%;
+    }
+}
+
+    td {
+        position: relative;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        background-color: #5e90f2;
+
+    }
+
+.raya {
+    padding-bottom: 50%;
+    border: none;
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+.tabla_monedas {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+}
+.tabla2{
+    border: 1px solid black;
+    padding: 10px;
+}
+.small {
+    font-size: 14px;
+    font-weight: bold;
+}
+.large {
+    font-size: 24px;
+    font-weight: bold;
+}

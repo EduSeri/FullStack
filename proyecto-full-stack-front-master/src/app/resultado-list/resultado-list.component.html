@@ -1,0 +1,42 @@
+<div class="imagen">
+    <div class="hijo">
+    hola
+    </div>
+    </div>
+    
+    <table>
+        <tr>
+            <td>Código de vuelo</td>
+            <th>{{codigoVuelo ? codigoVuelo :'vacio'}}</th>
+        </tr>
+        <tr>
+            <td>moneda de destino</td>
+            <th>{{monedaDestino ? monedaDestino : 'vacio'}}</th>
+        </tr>
+        <tr>
+            <td>Hora de salida</td>
+            <th>{{horaSalida ? horaSalida : 'vacio'}}</th>
+        </tr>
+        <tr>
+            <td>Hora de llegada</td>
+            <th>{{horaLlegada ? horaLlegada : 'vacio'}}</th>
+        </tr>
+        <tr>
+            <td>Tiempo de vuelo</td>
+            <th>{{tiempoVuelo ? tiempoVuelo : 'vacio'}}</th>
+        </tr>
+    </table>
+    
+    
+    <hr id="raya">
+    
+    
+    <table id="tabla_monedas">
+        <tr id="tabla2">
+            <td class="small">Moneda de llegada a Moneda de destino</td>
+        </tr>
+        <tr>
+            <th>{{monedaCambio ? monedaCambio : 'vacio'}}</th>
+        </tr>
+    </table>
+    <router-outlet></router-outlet>
